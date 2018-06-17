@@ -50,7 +50,7 @@ public class LinkedList {
 
             }
         } else {
-            System.out.println("nothing to remove");
+            System.out.println("no elements to remove");
         }
     }
 
