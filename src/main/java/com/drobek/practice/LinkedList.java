@@ -34,20 +34,24 @@ public class LinkedList {
 
     public void removeLast() {
         if (initialNode != null) {
-          if(initialNode.getNext()==null){
-              initialNode = null;
-          }
-        } else {
+            if (initialNode.getNext() == null) {
+                initialNode = null;
+            } else {
 
-            Node currentPointer = initialNode;
-            while (currentPointer.getNext() != null) {
-                    currentPointer = currentPointer.getNext();
-                    if(currentPointer.getNext().getNext()==null ){
-                        currentPointer = null;
+                Node currentPointer = initialNode;
+                while (currentPointer.getNext() != null) {
+
+                    if (currentPointer.getNext().getNext() == null) {
+                        currentPointer.setNext(null);
+                    } else {
+                        currentPointer = currentPointer.getNext();
                     }
-
                 }
+
             }
+        } else {
+            System.out.println("nothing to remove");
         }
+    }
 
 }
