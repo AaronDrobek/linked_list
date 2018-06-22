@@ -30,7 +30,7 @@ public class Main {
                case 4:
                    break;
            }
-       }while(userInput <=4 && userInput >0);
+       }while(userInput <=3 && userInput >0);
 
 
     }
